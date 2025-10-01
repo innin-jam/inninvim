@@ -6,8 +6,10 @@ return {
     require("blink-cmp").setup({
       keymap = {
         preset = "default",
-        ["<C-j>"] = { "select_next" },
-        ["<C-k>"] = { "select_prev" },
+        ["<M-j>"] = { "select_next" },
+        ["<M-k>"] = { "select_prev" },
+        ["<M-h>"] = { "cancel" },
+        ["<M-l>"] = { "select_and_accept" },
       },
       appearance = {
         nerd_font_variant = "mono",
