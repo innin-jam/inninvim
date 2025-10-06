@@ -12,6 +12,7 @@ inputs: {
       # neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     };
     categories = {
+      theme = true;
       general = true;
       lua = true;
       nix = true;

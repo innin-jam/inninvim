@@ -27,6 +27,7 @@ in
       lua = [
         lua-language-server
         stylua
+        selene
       ];
       nix = [
         nixd
@@ -44,22 +45,20 @@ in
 
     # This is for plugins that will load at startup without using packadd:
     startupPlugins = with pkgs.vimPlugins; {
+      theme = builtins.getAttr (extra.colorscheme or "rose-pine") {
+        "rose-pine" = rose-pine;
+      };
       general = [
         lze
         lzextras
-        rose-pine
         mini-icons
-      ];
-      rust = [
-        rustaceanvim
       ];
     };
 
     # not loaded automatically at startup.
     # use with packadd and an autocommand in config to achieve lazy loading
-    optionalPlugins = {
-      gitPlugins = with pkgs.neovimPlugins; [];
-      general = with pkgs.vimPlugins; [
+    optionalPlugins = with pkgs.vimPlugins; {
+      general = [
         nvim-treesitter.withAllGrammars
         conform-nvim
         nvim-lint
@@ -71,8 +70,11 @@ in
         fyler-nvim
         nvim-lspconfig
       ];
-      lua = with pkgs.vimPlugins; [
+      lua = [
         lazydev-nvim
+      ];
+      rust = [
+        rustaceanvim
       ];
     };
 

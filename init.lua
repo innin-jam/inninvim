@@ -1,13 +1,5 @@
 require("remap")
 
--- NOTE: These 2 need to be set up before any plugins are loaded.
-
--- [[ Setting options ]]
--- See `:help vim.o`
-
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
@@ -68,9 +60,6 @@ autocmd("TextYankPost", {
     })
   end,
 })
-
--- [[ Disable auto comment on enter ]]
--- See :help formatoptions
 
 autocmd("FileType", {
   desc = "remove formatoptions",

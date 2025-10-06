@@ -33,6 +33,12 @@ require("lze").load({
     end,
   },
   {
+    import = "plugins/rustaceanvim",
+  },
+  {
+    import = "plugins/nvim-lint",
+  },
+  {
     -- lazydev makes your lsp way better in your config without needing extra lsp configuration.
     "lazydev.nvim",
     enabled = nixCats("lua") or false,

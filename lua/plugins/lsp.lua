@@ -107,10 +107,4 @@ require("lze").load({
       },
     },
   },
-  {
-    "rust-analyzer",
-    lsp = {
-      filetypes = { "rust", "rs" },
-    },
-  },
 })
