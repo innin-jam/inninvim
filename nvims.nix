@@ -19,6 +19,7 @@ inputs: {
       python = true;
       rust = true;
       gitPlugins = true;
+      markdown = true;
     };
     extra = {
       nixdExtras.nixpkgs = ''import ${pkgs.path} {}'';

@@ -107,4 +107,10 @@ require("lze").load({
       },
     },
   },
+  {
+    "markdown-oxide",
+    lsp = {
+      filetypes = { "markdown" },
+    },
+  },
 })

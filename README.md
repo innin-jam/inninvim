@@ -1,3 +1,1 @@
-## Todo
-
-- [ ] try Neotree
+# My Neovim Configuration Using NixCats :3

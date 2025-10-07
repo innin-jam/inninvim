@@ -1,6 +1,7 @@
 return {
   {
     "rustaceanvim",
+    enabled = nixCats("rust") or false,
     version = "^4", -- Recommended
     lazy = false, -- This plugin is already lazy
     config = function()

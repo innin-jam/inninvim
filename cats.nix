@@ -41,6 +41,9 @@ in
         (extra.rust.toolchain or inputs.fenix.packages.${system}.latest.toolchain)
         rustup
       ];
+      markdown = [
+        markdown-oxide
+      ];
     };
 
     # This is for plugins that will load at startup without using packadd:
@@ -75,6 +78,9 @@ in
       ];
       rust = [
         rustaceanvim
+      ];
+      markdown = [
+        render-markdown-nvim
       ];
     };
 
