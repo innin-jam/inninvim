@@ -69,7 +69,8 @@ in
         nvim-treesitter-endwise
         nvim-autopairs
         nvim-ts-autotag
-        fzf-lua
+        # fzf-lua
+        telescope-nvim
         fyler-nvim
         nvim-lspconfig
       ];

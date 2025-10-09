@@ -108,9 +108,21 @@ require("lze").load({
     },
   },
   {
-    "markdown-oxide",
+    "markdown_oxide",
     lsp = {
       filetypes = { "markdown" },
+      settings = {
+        -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
+        -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...
+        capabilities = {
+          workspace = {
+            didChangeWatchedFiles = {
+              dynamicRegistration = true,
+            },
+          },
+        },
+        -- on_attach = on_attach, -- configure your on attach config
+      },
     },
   },
 })

@@ -11,8 +11,11 @@ require("lze").load({
   {
     import = "plugins.fyler",
   },
+  -- {
+  --   import = "plugins.fzf-lua",
+  -- },
   {
-    import = "plugins.fzf-lua",
+    import = "plugins.telescope",
   },
   {
     "nvim-treesitter-endwise",
@@ -33,7 +36,7 @@ require("lze").load({
     end,
   },
   {
-    import = "plugins/rustaceanvim",
+    import = "plugins.rustaceanvim",
   },
   {
     -- lazydev makes your lsp way better in your config without needing extra lsp configuration.
@@ -50,10 +53,10 @@ require("lze").load({
     end,
   },
   {
-    import = "plugins/render-markdown",
+    import = "plugins.render-markdown",
   },
   -- {
-  --   import = "plugins/nvim-lint",
+  --   import = "plugins.nvim-lint",
   -- },
 })
 
