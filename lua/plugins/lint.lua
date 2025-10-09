@@ -13,8 +13,8 @@ return {
       lua = { "selene" },
       rust = { "clippy" },
     }
-
-    vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+    vim.api.nvim_create_autocmd({ "InsertLeave" }, {
       callback = function()
         require("lint").try_lint()
       end,

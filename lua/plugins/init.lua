@@ -3,61 +3,41 @@ require("lze").load({
     import = "plugins.treesitter",
   },
   {
-    import = "plugins.blink-cmp",
+    "nvim-treesitter-endwise",
+    event = "BufReadPost",
   },
   {
     import = "plugins.conform",
   },
   {
-    import = "plugins.fyler",
+    import = "plugins.lint",
   },
-  -- {
-  --   import = "plugins.fzf-lua",
-  -- },
+  {
+    import = "plugins.blink-cmp",
+  },
   {
     import = "plugins.telescope",
   },
   {
-    "nvim-treesitter-endwise",
-    event = "BufReadPost",
+    import = "plugins.fyler",
   },
   {
-    "nvim-autopairs",
-    event = "InsertEnter",
-    after = function(_)
-      require("nvim-autopairs").setup({})
-    end,
+    import = "plugins.lazydev",
   },
   {
-    "nvim-ts-autotag",
-    event = "InsertEnter",
-    after = function(_)
-      require("nvim-ts-autotag").setup({})
-    end,
+    import = "plugins.render-markdown",
   },
   {
     import = "plugins.rustaceanvim",
   },
   {
-    -- lazydev makes your lsp way better in your config without needing extra lsp configuration.
-    "lazydev.nvim",
-    enabled = nixCats("lua") or false,
-    cmd = { "LazyDev" },
-    ft = "lua",
-    after = function(_)
-      require("lazydev").setup({
-        library = {
-          { words = { "nixCats" }, path = (nixCats.nixCatsPath or "") .. "/lua" },
-        },
-      })
-    end,
+    "nvim-autopairs",
+    event = "InsertEnter",
   },
   {
-    import = "plugins.render-markdown",
+    "nvim-ts-autotag",
+    event = "InsertEnter",
   },
-  -- {
-  --   import = "plugins.nvim-lint",
-  -- },
 })
 
 require("plugins.lsp")

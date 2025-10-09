@@ -4,7 +4,7 @@ return {
   cmd = { "RenderMarkdown" },
   after = function(_)
     require("render-markdown").setup({
-      completions = { lsp = { enabled = true } },
+      completions = { lsp = { enabled = true } }, -- I DON'T KNOW WHAT THIS DOES
     })
   end,
 }
