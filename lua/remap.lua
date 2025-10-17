@@ -86,3 +86,7 @@ vim.keymap.set(
   vim.lsp.buf.declaration,
   { noremap = true, silent = true, desc = "[G]oto [D]eclaration" }
 )
+
+-- Diagnostic Keymaps
+vim.keymap.set("n", "<leader>l", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })

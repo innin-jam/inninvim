@@ -18,7 +18,7 @@ return {
       vim.diagnostic.open_float,
       { desc = "Show diagnostic message" }
     )
-    vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+    vim.api.nvim_create_autocmd({ "BufWritePost" }, {
       callback = function()
         require("lint").try_lint()
       end,
