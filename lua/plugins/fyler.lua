@@ -8,8 +8,23 @@ return {
   -- enabled = nixCats().general or false,
   after = function()
     require("fyler").setup({
-      explorer = {
-        default_explorer = true,
+      icon_provider = "nvim_web_devicons",
+      default_explorer = true,
+      mappings = {
+        ["<Esc>"] = "CloseView",
+      },
+      win = {
+        border = "single",
+        kind = "float",
+        win_opts = {
+          -- number = false,
+          relativenumber = false,
+        },
+      },
+      popups = {
+        permission = {
+          border = "single",
+        },
       },
     })
   end,

@@ -23,9 +23,9 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Remove numbers from signcolumn
-vim.wo.signcolumn = "yes"
+vim.wo.signcolumn = "yes:1"
 vim.wo.relativenumber = false
-vim.wo.number = false
+vim.wo.number = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
@@ -36,10 +36,6 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = "menu,preview,noselect"
 
 vim.o.termguicolors = true
-
-vim.g.netrw_liststyle = 3
-vim.g.netrw_banner = 0
-vim.g.netrw_winsize = 25
 
 -- Colorscheme
 vim.cmd.colorscheme("rose-pine-moon")

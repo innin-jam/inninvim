@@ -44,6 +44,16 @@ require("lze").load({
       require("nvim-ts-autotag").setup()
     end,
   },
+  {
+    "quickmath.nvim",
+    cmd = { "Quickmath" },
+  },
+  {
+    "tiny-devicons-auto-colors.nvim",
+    after = function()
+      require("tiny-devicons-auto-colors").setup()
+    end,
+  },
 })
 
 require("plugins.lsp")

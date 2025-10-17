@@ -55,7 +55,8 @@ in
       general = [
         lze
         lzextras
-        mini-icons
+        # mini-icons
+        nvim-web-devicons
       ];
     };
 
@@ -70,10 +71,11 @@ in
         nvim-treesitter-endwise
         nvim-autopairs
         nvim-ts-autotag
-        # fzf-lua
         telescope-nvim
         fyler-nvim
         nvim-lspconfig
+        quickmath-nvim
+        tiny-devicons-auto-colors-nvim
       ];
       lua = [
         lazydev-nvim

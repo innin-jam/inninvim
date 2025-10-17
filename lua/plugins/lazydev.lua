@@ -4,7 +4,7 @@ return {
   enabled = nixCats("lua") or false,
   cmd = { "LazyDev" },
   ft = "lua",
-  after = function(_)
+  after = function()
     require("lazydev").setup({
       library = {
         { words = { "nixCats" }, path = (nixCats.nixCatsPath or "") .. "/lua" },

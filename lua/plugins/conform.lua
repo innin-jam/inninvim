@@ -21,7 +21,7 @@ return {
       },
     })
 
-    conform.formatters.prettier = function(bufnr)
+    conform.formatters.prettier = function(_)
       return {
         prepend_args = {
           "--prose-wrap",
@@ -34,7 +34,7 @@ return {
       }
     end
 
-    conform.formatters.stylua = function(bufnr)
+    conform.formatters.stylua = function(_)
       return {
         prepend_args = {
           "--indent-type",
