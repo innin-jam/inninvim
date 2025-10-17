@@ -11,9 +11,13 @@ return {
       -- -- elixir = { 'credo' },
       -- go = { "golangcilint" },
       lua = { "selene" },
-      rust = { "clippy" },
     }
-    vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Show diagnostic message" })
+    vim.keymap.set(
+      "n",
+      "<leader>l",
+      vim.diagnostic.open_float,
+      { desc = "Show diagnostic message" }
+    )
     vim.api.nvim_create_autocmd({ "InsertLeave" }, {
       callback = function()
         require("lint").try_lint()

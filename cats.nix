@@ -39,6 +39,7 @@ in
       ];
       rust = [
         (extra.rust.toolchain or inputs.fenix.packages.${system}.latest.toolchain)
+        # clippy
         rustup
       ];
       markdown = [
@@ -78,7 +79,7 @@ in
         lazydev-nvim
       ];
       rust = [
-        rustaceanvim
+        pkgs.neovimPlugins.rustaceanvim
       ];
       markdown = [
         render-markdown-nvim

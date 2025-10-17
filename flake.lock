@@ -66,11 +66,28 @@
         "type": "github"
       }
     },
+    "plugins-rustaceanvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760228638,
+        "narHash": "sha256-xxdd/bbZalcVgQOBQsjwrZL8BktycWYCiol5VyH3/4U=",
+        "owner": "mrcjkb",
+        "repo": "rustaceanvim",
+        "rev": "2f5afad4fc62c609dfd2ef4613999a0e8bddcccc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrcjkb",
+        "repo": "rustaceanvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "fenix": "fenix",
         "nixCats": "nixCats",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "plugins-rustaceanvim": "plugins-rustaceanvim"
       }
     },
     "rust-analyzer-src": {
