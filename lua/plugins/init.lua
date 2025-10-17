@@ -22,6 +22,9 @@ require("lze").load({
     import = "plugins.fyler",
   },
   {
+    import = "plugins.flash",
+  },
+  {
     import = "plugins.lazydev",
   },
   {

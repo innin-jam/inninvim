@@ -76,6 +76,7 @@ in
         nvim-lspconfig
         quickmath-nvim
         tiny-devicons-auto-colors-nvim
+        flash-nvim
       ];
       lua = [
         lazydev-nvim
