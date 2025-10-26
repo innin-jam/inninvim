@@ -77,6 +77,7 @@ in
         quickmath-nvim
         tiny-devicons-auto-colors-nvim
         flash-nvim
+        undotree
       ];
       lua = [
         lazydev-nvim

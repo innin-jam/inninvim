@@ -57,6 +57,15 @@ require("lze").load({
       require("tiny-devicons-auto-colors").setup()
     end,
   },
+  {
+    "undotree",
+    after = function()
+      vim.keymap.set({ "n" }, "<leader>u", function()
+        vim.cmd.UndotreeShow()
+        vim.cmd.UndotreeFocus()
+      end, { desc = "Toggle Undotree" })
+    end,
+  },
 })
 
 require("plugins.lsp")
