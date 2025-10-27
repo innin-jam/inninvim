@@ -5,7 +5,10 @@ return {
   ft = { "markdown" },
   after = function()
     require("render-markdown").setup({
-      completions = { lsp = { enabled = true } }, -- I DON'T KNOW WHAT THIS DOES
+      completions = {
+        -- blink = { enabled = true },
+        preset = "obsidian",
+      }, -- I DON'T KNOW WHAT THIS DOES
     })
   end,
 }

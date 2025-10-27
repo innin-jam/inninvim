@@ -8,7 +8,7 @@ inputs: {
       suffix-path = true;
       suffix-LD = true;
       wrapRc = true;
-      aliases = ["vi"];
+      aliases = ["vmmvm"];
       # neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
     };
     categories = {
