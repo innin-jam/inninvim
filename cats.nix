@@ -87,6 +87,10 @@ in
       ];
       markdown = [
         render-markdown-nvim
+        markdown-preview-nvim
+      ];
+      typst = [
+        typst-preview-nvim
       ];
     };
 

@@ -66,6 +66,12 @@ require("lze").load({
       end, { desc = "Toggle Undotree" })
     end,
   },
+  {
+    "markdown-preview.nvim",
+  },
+  {
+    "typst-preview.nvim",
+  },
 })
 
 require("plugins.lsp")

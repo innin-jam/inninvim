@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>fe", function()
+vim.keymap.set("n", "<leader>e", function()
   vim.cmd("Fyler")
 end, { desc = "Open File Manager" })
 
