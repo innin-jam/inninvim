@@ -10,6 +10,7 @@ return {
         nix = { "alejandra" },
         json = { "prettier" },
         jsonc = { "prettier" },
+        html = { "prettier" },
         markdown = { "prettier" },
         python = { "black" },
         rust = { "rustfmt" },
