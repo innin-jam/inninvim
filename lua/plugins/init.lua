@@ -22,9 +22,6 @@ require("lze").load({
     import = "plugins.fyler",
   },
   {
-    import = "plugins.flash",
-  },
-  {
     import = "plugins.lazydev",
   },
   {
@@ -71,6 +68,12 @@ require("lze").load({
   },
   {
     "typst-preview.nvim",
+  },
+  {
+    "oil.nvim",
+    after = function()
+      require("oil").setup()
+    end,
   },
 })
 

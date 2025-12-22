@@ -72,7 +72,7 @@ in
         nvim-autopairs
         nvim-ts-autotag
         telescope-nvim
-        fyler-nvim
+        oil-nvim
         nvim-lspconfig
         quickmath-nvim
         tiny-devicons-auto-colors-nvim
