@@ -19,9 +19,6 @@ require("lze").load({
     import = "plugins.telescope",
   },
   {
-    import = "plugins.fyler",
-  },
-  {
     import = "plugins.lazydev",
   },
   {
@@ -29,6 +26,9 @@ require("lze").load({
   },
   {
     import = "plugins.rustaceanvim",
+  },
+  {
+    import = "plugins.flash",
   },
   {
     "nvim-autopairs",
@@ -57,8 +57,8 @@ require("lze").load({
   {
     "undotree",
     after = function()
-      vim.keymap.set({ "n" }, "<leader>u", function()
-        vim.cmd.UndotreeShow()
+      vim.keymap.set({ "n", "v", "x" }, "<leader>u", function()
+        vim.cmd.UndotreeToggle()
         vim.cmd.UndotreeFocus()
       end, { desc = "Toggle Undotree" })
     end,
@@ -73,6 +73,9 @@ require("lze").load({
     "oil.nvim",
     after = function()
       require("oil").setup()
+      vim.keymap.set({ "n", "v", "x" }, "<leader>e", function()
+        vim.cmd.Oil()
+      end)
     end,
   },
 })

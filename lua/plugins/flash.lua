@@ -6,7 +6,7 @@ return {
         prefix = { { " ", "FlashPromptIcon" } },
       },
     })
-    vim.keymap.set({ "n", "v", "x" }, "/", function()
+    vim.keymap.set({ "n", "v", "x" }, "<leader>/", function()
       require("flash").jump()
     end, { desc = "Flash" })
   end,
