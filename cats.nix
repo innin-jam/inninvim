@@ -38,7 +38,7 @@ in
         black
       ];
       rust = [
-        (extra.rust.toolchain or inputs.fenix.packages.${system}.latest.toolchain)
+        (extra.rust.toolchain or inputs.fenix.packages.${system.stdenv.hostPlatform.system}.latest.toolchain)
         # clippy
         rustup
       ];

@@ -113,6 +113,6 @@
       nixosModules.default = nixosModule;
       homeModules.default = homeModule;
 
-      inherit utils nixosModule homeModule;
+      # inherit utils nixosModule homeModule;
     };
 }
